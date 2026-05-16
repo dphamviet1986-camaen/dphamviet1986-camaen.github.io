@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<script src="https://sdk.minepi.com/pi-sdk.js"></script>
-<script>Pi.init({ version: "2.0", sandbox: true })</script>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
@@ -404,17 +402,5 @@ loop()
 
 })()
 </script>
-const Pi = window.Pi;
-
-Pi.authenticate(["username"], function(payment) {
-  // handles any unfinished payment from a previous session
-  console.log("Incomplete payment:", payment);
-})
-.then(function(auth) {
-  console.log("Logged in as:", auth.user.username);
-})
-.catch(function(err) {
-  console.error("Auth error:", err);
-});
 </body>
 </html>
