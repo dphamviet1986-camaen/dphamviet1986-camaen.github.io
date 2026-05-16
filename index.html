@@ -406,7 +406,7 @@ loop()
 </script>
 const Pi = window.Pi;
 
-Pi.authenticate(["Camaen"], function(payment) {
+Pi.authenticate(["username"], function(payment) {
   // handles any unfinished payment from a previous session
   console.log("Incomplete payment:", payment);
 })
